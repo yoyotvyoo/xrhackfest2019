@@ -52,11 +52,6 @@ namespace ViveSR
                 {
                     if (!EnableEye) return;
                     if (Status == FrameworkStatus.WORKING) return;
-                    if (!SRanipal_Eye.IsViveProEye())
-                    {
-                        Status = FrameworkStatus.NOT_SUPPORT;
-                        return;
-                    }
 
                     Status = FrameworkStatus.START;
                     Error result = SRanipal_API.Initial(SRanipal_Eye.ANIPAL_TYPE_EYE, IntPtr.Zero);
@@ -74,18 +69,15 @@ namespace ViveSR
 
                 public void StopFramework()
                 {
-                    if (SRanipal_Eye.IsViveProEye())
+                    if (Status != FrameworkStatus.STOP)
                     {
-                        if (Status != FrameworkStatus.STOP)
-                        {
-                            Error result = SRanipal_API.Release(SRanipal_Eye.ANIPAL_TYPE_EYE);
-                            if (result == Error.WORK) Debug.Log("[SRanipal] Release Eye : " + result);
-                            else Debug.LogError("[SRanipal] Release Eye : " + result);
-                        }
-                        else
-                        {
-                            Debug.Log("[SRanipal] Stop Framework : module not on");
-                        }
+                        Error result = SRanipal_API.Release(SRanipal_Eye.ANIPAL_TYPE_EYE);
+                        if (result == Error.WORK) Debug.Log("[SRanipal] Release Eye : " + result);
+                        else Debug.LogError("[SRanipal] Release Eye : " + result);
+                    }
+                    else
+                    {
+                        Debug.Log("[SRanipal] Stop Framework : module not on");
                     }
                     Status = FrameworkStatus.STOP;
                 }

@@ -61,13 +61,6 @@ namespace ViveSR
                 public const int ANIPAL_TYPE_EYE = 0;
 
                 /// <summary>
-                /// Check HMD device is ViveProEye or not.
-                /// </summary>
-                /// <returns>true : ViveProEye, false : other HMD.</returns>
-                [DllImport("SRanipal")]
-                public static extern bool IsViveProEye();
-
-                /// <summary>
                 /// Gets data from anipal's Eye module.
                 /// </summary>
                 /// <param name="data">ViveSR.anipal.Eye.EyeData</param>
