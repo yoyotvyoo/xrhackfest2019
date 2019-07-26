@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ViveSR/Scenes/EyeSample.unity
+    path: Assets/3rdparty/ViveSR/Scenes/EyeSample.unity
     guid: 442215360aef07847ac6dc9a96f5c584
   m_configObjects: {}
