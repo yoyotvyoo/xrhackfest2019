@@ -50,7 +50,7 @@ public class GazeRaycaster : MonoBehaviour
         }
 
         // Reset the gaze point object
-        gazePoint.SetActive(false);
+        // gazePoint.SetActive(false);
         focusInfo = default(FocusInfo);
 
         // Get FocusInfo for the gameobject being gazed
@@ -93,7 +93,7 @@ public class GazeRaycaster : MonoBehaviour
             isGazeTarget = focusInfo.collider.gameObject.tag == "GazeTarget";
 
             // Draw the gaze point on the target
-            gazePoint.SetActive(true);
+            // gazePoint.SetActive(true);
             gazePoint.transform.position = focusInfo.point;
             gazePoint.transform.localScale = Vector3.one * focusInfo.distance * gazePointScale;
         }
