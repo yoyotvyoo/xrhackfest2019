@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e48b0ae6c355334cab5c2945171f83b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Lv1_Interview
+  scene: Lv2_Argument
   loadInfo: {fileID: 1789353824}
   startTime: 0
   leastTime: 5
