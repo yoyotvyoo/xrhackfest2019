@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - FxTemporaire
+  - Cube
   - projectile
+  - FxTemporaire
+  - GazeTarget
   layers:
   - Default
   - TransparentFX
