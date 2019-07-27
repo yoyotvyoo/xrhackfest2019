@@ -30,13 +30,10 @@ public class GameConsole : MonoBehaviour
     void Update()
     {
         if(!hasResult && Time.time - startTime > targetTime)
-		{
-			hasResult = true;
-			
+		{			
 			if(isFocus)
 			{
-				successPanel.SetActive(true);
-				Invoke("NextStage", 3f);
+				GameSuccess();
 			}
 			else
 			{

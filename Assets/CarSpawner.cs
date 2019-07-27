@@ -35,8 +35,9 @@ public class CarSpawner : MonoBehaviour
         yellowCar.GetComponent<MoveTowards>().destination = end;
 
         yield return new WaitForSeconds(5.0f);
+        // yield return new WaitForSeconds(1.0f);
 
         var blackCar = GameObject.Instantiate(this.blackCar, start.position, start.rotation);
-        blackCar.GetComponent<MoveTowards>().destination = end;
+        blackCar.GetComponent<SnakeDriving>().destination = end;
     }
 }
