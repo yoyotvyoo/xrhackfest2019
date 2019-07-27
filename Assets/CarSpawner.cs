@@ -4,20 +4,39 @@ using UnityEngine;
 
 public class CarSpawner : MonoBehaviour
 {
-    public GameObject[] cars;
+    public GameObject redCar;
+    public GameObject whiteCar;
+    public GameObject yellowCar;
+    public GameObject blackCar;
     public Transform start;
     public Transform end;
 
     void Start()
     {
-        InvokeRepeating("LaunchCar", 2.0f, 5.0f);
+        StartCoroutine(CarSpawnCoroutine());
+        // InvokeRepeating("LaunchCar", 2.0f, 5.0f);
     }
 
-    void LaunchCar()
+    private IEnumerator CarSpawnCoroutine()
     {
-        var index = Random.Range(0, cars.Length);
+        yield return new WaitForSeconds(3.0f);
 
-        var go = GameObject.Instantiate(cars[index], start.position, start.rotation);
-        go.GetComponent<MoveTowards>().destination = end;
+        var redCar = GameObject.Instantiate(this.redCar, start.position, start.rotation);
+        redCar.GetComponent<MoveTowards>().destination = end;
+
+        yield return new WaitForSeconds(5.0f);
+
+        var whiteCar = GameObject.Instantiate(this.whiteCar, start.position, start.rotation);
+        whiteCar.GetComponent<MoveTowards>().destination = end;
+
+        yield return new WaitForSeconds(5.0f);
+
+        var yellowCar = GameObject.Instantiate(this.yellowCar, start.position, start.rotation);
+        yellowCar.GetComponent<MoveTowards>().destination = end;
+
+        yield return new WaitForSeconds(5.0f);
+
+        var blackCar = GameObject.Instantiate(this.blackCar, start.position, start.rotation);
+        blackCar.GetComponent<MoveTowards>().destination = end;
     }
 }

@@ -1603,7 +1603,7 @@ PrefabInstance:
     - target: {fileID: 8335605438458367363, guid: 4fd0d030b8aab294ea3dbe1e1dca2865,
         type: 3}
       propertyPath: gazeData
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8335605438458367363, guid: 4fd0d030b8aab294ea3dbe1e1dca2865,
         type: 3}
@@ -2942,12 +2942,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f39657feb739f9e4bbea0b09fd9394a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cars:
-  - {fileID: 3573134889906014406, guid: 7ea263a00d6bb15409fddf2779bb31bc, type: 3}
-  - {fileID: 4007371140948895467, guid: bc3ab7d56099a354ba40ad3354effe96, type: 3}
-  - {fileID: 1137061663081382802, guid: a70e50e4e1a2eef41a26280b29adf99a, type: 3}
-  - {fileID: 5453888621802924657, guid: 08e426d5a823dd6449a1899e4028cb5d, type: 3}
-  - {fileID: 4469944205502516288, guid: 9afb98ba024b1cd4fbe2d6c97b2fcf7d, type: 3}
+  redCar: {fileID: 1137061663081382802, guid: a70e50e4e1a2eef41a26280b29adf99a, type: 3}
+  whiteCar: {fileID: 5453888621802924657, guid: 08e426d5a823dd6449a1899e4028cb5d,
+    type: 3}
+  yellowCar: {fileID: 3573134889906014406, guid: 7ea263a00d6bb15409fddf2779bb31bc,
+    type: 3}
+  blackCar: {fileID: 4469944205502516288, guid: 9afb98ba024b1cd4fbe2d6c97b2fcf7d,
+    type: 3}
   start: {fileID: 1310708844}
   end: {fileID: 724399071}
 --- !u!1 &1681559700 stripped
