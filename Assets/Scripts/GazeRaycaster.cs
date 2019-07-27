@@ -17,7 +17,6 @@ public class GazeRaycaster : MonoBehaviour
     private GazeState gazeState;
     private readonly GazeIndex[] gazePriority = new GazeIndex[] { GazeIndex.COMBINE, GazeIndex.LEFT, GazeIndex.RIGHT };
     private FocusInfo focusInfo;
-    private Ray gazeRay;
     private float gazePointScale = 0.01f;
     private float timerOnTarget = 0f;
     private float timerOffTarget = 0f;
@@ -45,6 +44,7 @@ public class GazeRaycaster : MonoBehaviour
 
             foreach (GazeIndex index in gazePriority)
             {
+                Ray gazeRay;
                 if (SRanipal_Eye.Focus(index, out gazeRay, out focusInfo, Mathf.Infinity))
                 {
                     // Got one. Ready to go.
@@ -70,39 +70,29 @@ public class GazeRaycaster : MonoBehaviour
             }
         }
 
-        bool isHit = focusInfo.transform != null;
-        bool isGazeTarget = false;
-        if (isHit)
+        if (focusInfo.transform != null)
         {
-            isGazeTarget = focusInfo.collider.gameObject.tag == "GazeTarget";
-
-            // Draw the gaze point on the target
-            gazePoint.SetActive(true);
-            gazePoint.transform.position = focusInfo.point;
-            gazePoint.transform.localScale = Vector3.one * focusInfo.distance * gazePointScale;
-        }
-        else
-        {
-            var distance = 2000f;
-            gazePoint.transform.position = gazeRay.GetPoint(distance);
-            gazePoint.transform.localScale = Vector3.one * distance * gazePointScale;
-        }
-
-        if (isHit && isGazeTarget)
-        {
-            timerOffTarget = 0f;
-            timerOnTarget += Time.deltaTime;
-            if (timerOnTarget > 1.0f && gazeState == GazeState.OffTarget)
+            if (focusInfo.collider.gameObject.tag == "GazeTarget")
             {
-                gazeState = GazeState.OnTarget;
-                EnterGazeTarget.Invoke();
+                timerOffTarget = 0f;
+                timerOnTarget += Time.deltaTime;
+                if (timerOnTarget > 0.5f && gazeState == GazeState.OffTarget)
+                {
+                    gazeState = GazeState.OnTarget;
+                    EnterGazeTarget.Invoke();
+                }
+
+                // Draw the gaze point on the target
+                gazePoint.SetActive(true);
+                gazePoint.transform.position = focusInfo.point;
+                gazePoint.transform.localScale = Vector3.one * focusInfo.distance * gazePointScale;
             }
         }
         else
         {
             timerOnTarget = 0f;
             timerOffTarget += Time.deltaTime;
-            if (timerOffTarget > 1.0f && gazeState == GazeState.OnTarget)
+            if (timerOffTarget > 0.5f && gazeState == GazeState.OnTarget)
             {
                 gazeState = GazeState.OffTarget;
                 LeaveGazeTarget.Invoke();

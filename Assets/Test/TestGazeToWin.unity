@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 924987223}
   - component: {fileID: 924987229}
   m_Layer: 0
-  m_Name: VRCamera
+  m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -667,7 +667,7 @@ PrefabInstance:
     - target: {fileID: 5022311325340854294, guid: 42dd8bec79058cc4eb037e58e84f5a8e,
         type: 3}
       propertyPath: m_Name
-      value: GazeTargetSphere
+      value: GazeTargetShpere
       objectReference: {fileID: 0}
     - target: {fileID: 7017062977644675793, guid: 42dd8bec79058cc4eb037e58e84f5a8e,
         type: 3}
