@@ -13,12 +13,12 @@ public class GazeRaycaster : MonoBehaviour
     public static UnityEvent EnterGazeTarget = new UnityEvent();
     public static UnityEvent LeaveGazeTarget = new UnityEvent();
     public static GazeState initialGazeState;
+    public float gazePointScale = 0.04f;
 
     private GazeState gazeState;
     private readonly GazeIndex[] gazePriority = new GazeIndex[] { GazeIndex.COMBINE, GazeIndex.LEFT, GazeIndex.RIGHT };
     private FocusInfo focusInfo;
     private Ray gazeRay;
-    private float gazePointScale = 0.01f;
     private float timerOnTarget = 0f;
     private float timerOffTarget = 0f;
 
@@ -33,6 +33,16 @@ public class GazeRaycaster : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            gazeData = GazeData.HmdForward;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            gazeData = GazeData.Eye;
+        }
+
         // Reset the gaze point object
         gazePoint.SetActive(false);
         focusInfo = default(FocusInfo);
