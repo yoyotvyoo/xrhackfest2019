@@ -44,4 +44,9 @@ public class Airplane : MonoBehaviour
 			hitTime = Time.time;
 		}
     }
+	
+	void OnDisable()
+	{
+		Time.timeScale = 1f;
+	}
 }

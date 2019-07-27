@@ -15,6 +15,8 @@ public class GameConsole : MonoBehaviour
 	public GameObject failPanel;
 	public string failSce;
 	
+	public bool isFocus = true;
+	
     // Start is called before the first frame update
     void Start()
     {
@@ -30,10 +32,28 @@ public class GameConsole : MonoBehaviour
         if(!hasResult && Time.time - startTime > targetTime)
 		{
 			hasResult = true;
+			
+			if(isFocus)
+			{
+				successPanel.SetActive(true);
+				Invoke("NextStage", 3f);
+			}
+			else
+			{
+				GameFail();
+			}
+		}
+    }
+	
+	public void GameSuccess()
+	{
+		if(!hasResult)
+		{
+			hasResult = true;
 			successPanel.SetActive(true);
 			Invoke("NextStage", 3f);
 		}
-    }
+	}
 	
 	public void GameFail()
 	{

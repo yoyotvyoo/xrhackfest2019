@@ -28,12 +28,7 @@ public class Lv2 : MonoBehaviour
     {
         animator.Play("female_emotion_angry_loop");
         Debug.Log("[Lv2] Yor are fucked.");
-        StartCoroutine(DelayLoadScene());
+		GameConsole.instance.GameFail();
     }
 
-    private IEnumerator DelayLoadScene()
-    {
-        yield return new WaitForSeconds(3.0f);
-        // SceneManager.LoadScene("Lv2_Interview");
-    }
 }

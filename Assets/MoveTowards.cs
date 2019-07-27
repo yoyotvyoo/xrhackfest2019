@@ -10,6 +10,6 @@ public class MoveTowards : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, destination.position, speed);
+        transform.position = Vector3.MoveTowards(transform.position, destination.position, speed * Time.deltaTime);
     }
 }

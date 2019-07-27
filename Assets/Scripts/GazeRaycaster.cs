@@ -24,6 +24,12 @@ public class GazeRaycaster : MonoBehaviour
 
     void Start()
     {
+		#if UNITY_EDITOR
+			gazeData = GazeData.MouseLook;
+		#else
+			gazeData = GazeData.Eye;
+		#endif
+		
         gazeState = initialGazeState;
         if (gazeData == GazeData.MouseLook)
         {

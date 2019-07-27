@@ -18,6 +18,7 @@ public class Lv7 : MonoBehaviour
     private void EnterGazeTarget()
     {
         Debug.Log("[EnterGazeTarget] Sorry. You are fucked.");
+		GameConsole.instance.GameSuccess();
     }
 
     private void LeaveGazeTarget()

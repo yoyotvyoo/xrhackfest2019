@@ -40,9 +40,9 @@ public class StageConsole : MonoBehaviour
 		{
 			SceneManager.LoadScene(scenes[5]);
 		}
-		else if(Input.GetKeyDown(KeyCode.F6) )
+		else if(Input.GetKeyDown(KeyCode.F7) )
 		{
-			// SceneManager.LoadScene(scenes[6]);
+			SceneManager.LoadScene(scenes[6]);
 		}
     }
 	

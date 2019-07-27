@@ -75,24 +75,32 @@ public class Lv4 : MonoBehaviour
         //yield return new WaitForSeconds(2.0f);
 
     }
-
-
-    // Update is called once per frame
-    void Update()
+	
+    void OnEnable()
     {
-        if (Input.GetButtonDown("Jump"))
-        {
-            /*if(index >= 0 )
-				girls[index].SetActive(false);
-			
-			
-			if(index < girls.Length )
-			{
-				index++;
-				girls[index].SetActive(true);
-			}*/
-
-            StartCoroutine(TVShow());
-        }
+        GazeRaycaster.initialGazeState = GazeRaycaster.GazeState.OnTarget;
+        GazeRaycaster.LeaveGazeTarget.AddListener(LeaveGazeTarget);
+        GazeRaycaster.EnterGazeTarget.AddListener(EnterGazeTarget);
     }
+
+    void OnDisable()
+    {
+        GazeRaycaster.LeaveGazeTarget.RemoveListener(LeaveGazeTarget);
+        GazeRaycaster.EnterGazeTarget.RemoveListener(EnterGazeTarget);
+    }
+
+    private void EnterGazeTarget()
+    {
+        // Debug.Log("Enter the target.");
+    }
+
+    private void LeaveGazeTarget()
+    {
+        // animator.Play("male_emotion_angry_loop");
+        Debug.Log("[Lv4] Yor are fucked.");
+		GameConsole.instance.GameFail();
+		
+        // StartCoroutine(DelayLoadScene());
+    }
+
 }

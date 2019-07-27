@@ -23,7 +23,7 @@ public class Lv5 : MonoBehaviour
     {
         animator.Play("Atk4_wing_loop");
         Debug.Log("[Lv5] Yor are fucked.");
-        StartCoroutine(DelayLoadScene());
+		GameConsole.instance.GameFail();
         // Debug.Log("Enter the target.");
     }
 

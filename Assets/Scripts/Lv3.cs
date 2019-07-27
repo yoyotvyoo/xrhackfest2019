@@ -28,7 +28,7 @@ public class Lv3 : MonoBehaviour
     {
         animator.Play("male_act_strafing_loop");
         Debug.Log("[Lv3] Yor are fucked.");
-        StartCoroutine(DelayLoadScene());
+		GameConsole.instance.GameFail();
     }
 
     private IEnumerator DelayLoadScene()

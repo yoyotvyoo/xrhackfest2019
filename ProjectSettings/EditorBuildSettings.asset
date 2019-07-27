@@ -6,6 +6,45 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Lv1_pre.unity
+    guid: 26ba10bd343b8044082c0581a87b2189
+  - enabled: 1
+    path: Assets/Scenes/Lv1_Interview.unity
+    guid: b9dba69256b131944843e12b58b70407
+  - enabled: 1
+    path: Assets/Scenes/Lv2_Argument.unity
+    guid: bd3153e0b5721714aab44b0425654d13
+  - enabled: 1
+    path: Assets/Scenes/Lv2_pre.unity
+    guid: c78c432bf1b38b1478bd05016c143df8
+  - enabled: 1
+    path: Assets/Scenes/Lv3_pre.unity
+    guid: f07b5427f10797e42b53a52447c21c39
+  - enabled: 1
+    path: Assets/Scenes/Lv3_Robbery.unity
+    guid: 2053742a70e8ec6418fa7c20c090e54a
+  - enabled: 1
+    path: Assets/Scenes/Lv4_ForeverLove.unity
+    guid: 2d58b04f7b69233438725f9c10a63531
+  - enabled: 1
+    path: Assets/Scenes/Lv4_pre.unity
+    guid: 282367b398682de449d1ac35ea5c00eb
+  - enabled: 1
     path: Assets/Scenes/Lv5_Medusa.unity
     guid: 2e7a6965822a80d41b78ea4ae9d804fd
+  - enabled: 1
+    path: Assets/Scenes/Lv5_pre.unity
+    guid: 77157b7978ae14c4ba1d12b29ba7d9c9
+  - enabled: 1
+    path: Assets/Scenes/Lv6_Art.unity
+    guid: f28d157b040c71f4ca6bb2de88e3e0a9
+  - enabled: 1
+    path: Assets/Scenes/Lv7_Surveillance.unity
+    guid: 42792a6f589c3a34dae18436014fe607
+  - enabled: 1
+    path: Assets/Scenes/Lv7_pre.unity
+    guid: 16c245fb8b6af4746bc2b055e2c5cf07
+  - enabled: 1
+    path: Assets/Scenes/Lv6_pre.unity
+    guid: 51aab770cc3d1dc47bd8ce6cab397e5e
   m_configObjects: {}
