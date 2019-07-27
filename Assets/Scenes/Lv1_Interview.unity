@@ -288,6 +288,11 @@ PrefabInstance:
       propertyPath: gazePoint
       value: 
       objectReference: {fileID: 1151112039}
+    - target: {fileID: 8335605438458367363, guid: 4fd0d030b8aab294ea3dbe1e1dca2865,
+        type: 3}
+      propertyPath: gazePointScale
+      value: 0.04
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fd0d030b8aab294ea3dbe1e1dca2865, type: 3}
 --- !u!1001 &108990750
@@ -1813,6 +1818,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9526514, guid: 1d3b1a1513de66247974634911345b98, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8edf9acc715088946b32cd6404bde622, type: 2}
     - target: {fileID: 427610, guid: 1d3b1a1513de66247974634911345b98, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.014
@@ -1869,10 +1878,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.1
       objectReference: {fileID: 0}
-    - target: {fileID: 9526514, guid: 1d3b1a1513de66247974634911345b98, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 8edf9acc715088946b32cd6404bde622, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d3b1a1513de66247974634911345b98, type: 3}
 --- !u!1 &2087662615
