@@ -142,6 +142,7 @@ GameObject:
   m_Component:
   - component: {fileID: 121258913}
   - component: {fileID: 121258914}
+  - component: {fileID: 121258915}
   m_Layer: 0
   m_Name: Console
   m_TagString: Untagged
@@ -177,6 +178,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camPos: {fileID: 1456408705}
   cam: {fileID: 948417558}
+--- !u!114 &121258915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121258912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5ad27cbc7f614eac3ff1a56a2f628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenes:
+  - Lv1_pre
+  - Lv2_pre
+  - Lv3_pre
+  - Lv4_pre
+  - Lv5_pre
+  - Lv6_pre
 --- !u!1 &214512777
 GameObject:
   m_ObjectHideFlags: 0
