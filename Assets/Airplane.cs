@@ -42,6 +42,8 @@ public class Airplane : MonoBehaviour
 			
 			isNew = false;
 			hitTime = Time.time;
+			
+			// GazeRaycaster.instance.gazeData = GazeRaycaster.GazeData.HmdForward;
 		}
     }
 	

@@ -6,6 +6,7 @@ using ViveSR.anipal.Eye;
 
 public class GazeRaycaster : MonoBehaviour
 {
+	// public static GazeRaycaster instance;
     public enum GazeState { OnTarget = 0, OffTarget = 1 }
     public enum GazeData { Eye = 0, HmdForward = 1, MouseLook = 2 }
     public GazeData gazeData = GazeData.Eye;
@@ -22,6 +23,11 @@ public class GazeRaycaster : MonoBehaviour
     private float timerOnTarget = 0f;
     private float timerOffTarget = 0f;
 
+	/*void Awake()
+	{
+		instance = this;
+	}*/
+	
     void Start()
     {
 		#if UNITY_EDITOR
@@ -100,7 +106,9 @@ public class GazeRaycaster : MonoBehaviour
         else
         {
             var distance = 2000f;
-            gazePoint.transform.position = gazeRay.GetPoint(distance);
+			Ray distanceRay = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
+            gazePoint.transform.position = distanceRay.GetPoint(distance);
+            // gazePoint.transform.localScale = Vector3.one * distance * gazePointScale;
             gazePoint.transform.localScale = Vector3.one * distance * gazePointScale;
         }
 
