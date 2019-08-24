@@ -8,7 +8,7 @@ public class ViewHeight : MonoBehaviour
     void Start()
     {
 		#if UNITY_EDITOR
-			transform.localPosition = Vector3.up * 1.5f;
+			transform.localPosition = Vector3.up * 1.7f;
 		#endif
     }
 

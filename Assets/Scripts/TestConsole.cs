@@ -17,6 +17,17 @@ public class TestConsole : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        camPos.text = System.String.Format("Cam: {0}", cam.position);
+        // camPos.text = System.String.Format("Cam: {0}", cam.position);
+		if(Input.GetButtonDown("Jump") )
+		{
+			Debug.Log("Time stall");
+			Time.timeScale = 0.2f;
+		}
+		
+		if(Input.GetButtonUp("Jump") )
+		{
+			Time.timeScale = 1f;
+			Debug.Log("Time return");
+		}
     }
 }

@@ -280,8 +280,8 @@ GameObject:
   m_Component:
   - component: {fileID: 857466707}
   - component: {fileID: 857466710}
-  - component: {fileID: 857466709}
   - component: {fileID: 857466708}
+  - component: {fileID: 857466709}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 857466706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -344,15 +344,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3cdceb49b7f518447b0f283fcbc0624b, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98f858f157faa454da41c8be28533301, type: 3}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u8FF7\u5931\u65BC\u7F8E"
 --- !u!222 &857466710
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -694,8 +699,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1959316867}
   - component: {fileID: 1959316870}
-  - component: {fileID: 1959316869}
   - component: {fileID: 1959316868}
+  - component: {fileID: 1959316869}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -747,7 +752,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1959316866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -758,15 +763,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 45db9473b78b05a4ebe63c241d2f61c1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98f858f157faa454da41c8be28533301, type: 3}
+    m_FontSize: 60
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u5C31\u7B97\u5929\u5D29\u5730\u88C2"
 --- !u!222 &1959316870
 CanvasRenderer:
   m_ObjectHideFlags: 0

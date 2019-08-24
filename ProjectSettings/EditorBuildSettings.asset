@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lv7_Surveillance.unity
     guid: 42792a6f589c3a34dae18436014fe607
+  - enabled: 1
+    path: Assets/Scenes/Lv8_pre.unity
+    guid: 49fdb5a416db5734692ae70637fba7ce
+  - enabled: 1
+    path: Assets/Scenes/Lv8_HSInterview.unity
+    guid: 63913ac9edee1c749944860dd616fe91
   m_configObjects: {}

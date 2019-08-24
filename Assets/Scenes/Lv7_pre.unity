@@ -280,8 +280,8 @@ GameObject:
   m_Component:
   - component: {fileID: 857466707}
   - component: {fileID: 857466710}
-  - component: {fileID: 857466709}
   - component: {fileID: 857466708}
+  - component: {fileID: 857466709}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -305,8 +305,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -103, y: 71.3}
-  m_SizeDelta: {x: 262.1, y: 79.4}
+  m_AnchoredPosition: {x: -51.65, y: 71.3}
+  m_SizeDelta: {x: 405.12, y: 79.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &857466708
 MonoBehaviour:
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 857466706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
@@ -344,15 +344,20 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ec147b278abf9fd4c858445485bd7116, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98f858f157faa454da41c8be28533301, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 5
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u4F60\u662F\u6355\u6349\u8D85\u901F\u4ED4\u7684"
 --- !u!222 &857466710
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -694,8 +699,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1959316867}
   - component: {fileID: 1959316870}
-  - component: {fileID: 1959316869}
   - component: {fileID: 1959316868}
+  - component: {fileID: 1959316869}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -719,8 +724,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 56.4, y: -41}
-  m_SizeDelta: {x: 406.1, y: 167.1}
+  m_AnchoredPosition: {x: 15.66, y: -41}
+  m_SizeDelta: {x: 487.58, y: 167.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1959316868
 MonoBehaviour:
@@ -747,26 +752,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1959316866}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9920237, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e3754549f39957442876c04873520910, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 98f858f157faa454da41c8be28533301, type: 3}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 6
+    m_MaxSize: 80
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u6E2C\u901F\u7167\u76F8\u6A5F "
 --- !u!222 &1959316870
 CanvasRenderer:
   m_ObjectHideFlags: 0

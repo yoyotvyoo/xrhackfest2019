@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ImageFade : MonoBehaviour
 {
-	public Image myImg;
+	public MaskableGraphic myImg;
     public float startFadeIn;
 	public float delay;
 	public float fadeLength = 0.5f;
@@ -13,7 +13,7 @@ public class ImageFade : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myImg = GetComponent<Image>();
+        myImg = GetComponent<MaskableGraphic>();
     }
 
     // Update is called once per frame

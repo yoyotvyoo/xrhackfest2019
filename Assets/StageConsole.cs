@@ -44,6 +44,10 @@ public class StageConsole : MonoBehaviour
 		{
 			SceneManager.LoadScene(scenes[6]);
 		}
+		else if(Input.GetKeyDown(KeyCode.F8) )
+		{
+			SceneManager.LoadScene("Lv8_pre");
+		}
 		else if(Input.GetKeyDown(KeyCode.F12) )
 		{
 			SceneManager.LoadScene("entrance");
