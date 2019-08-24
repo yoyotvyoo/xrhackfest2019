@@ -21,7 +21,7 @@ public class TestConsole : MonoBehaviour
 		if(Input.GetButtonDown("Jump") )
 		{
 			Debug.Log("Time stall");
-			Time.timeScale = 0.2f;
+			Time.timeScale = 0.1f;
 		}
 		
 		if(Input.GetButtonUp("Jump") )

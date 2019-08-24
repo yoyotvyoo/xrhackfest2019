@@ -943,8 +943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.9000015, y: -0.80000305}
-  m_SizeDelta: {x: -19.3, y: -39.5}
+  m_AnchoredPosition: {x: 2.899994, y: 0.0000066757}
+  m_SizeDelta: {x: -19.3, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595005985
 MonoBehaviour:
@@ -979,7 +979,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u4F60\u7684\u773C\u795E\u7565\u6709\u9003\u907F"
+  m_Text: "\u4F60\u7684\u773C\u795E\n\u7565\u6709\u9003\u907F"
 --- !u!222 &595005986
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2444,6 +2444,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 128066, guid: 1d3b1a1513de66247974634911345b98, type: 3}
+      propertyPath: m_TagString
+      value: GazeTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 195640, guid: 1d3b1a1513de66247974634911345b98, type: 3}
+      propertyPath: m_TagString
+      value: GazeTarget
+      objectReference: {fileID: 0}
     - target: {fileID: 9526514, guid: 1d3b1a1513de66247974634911345b98, type: 3}
       propertyPath: m_Controller
       value: 
@@ -2508,6 +2516,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 407474, guid: 1d3b1a1513de66247974634911345b98, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 403256, guid: 1d3b1a1513de66247974634911345b98, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.016151397
@@ -2563,18 +2575,6 @@ PrefabInstance:
     - target: {fileID: 474118, guid: 1d3b1a1513de66247974634911345b98, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 407474, guid: 1d3b1a1513de66247974634911345b98, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 195640, guid: 1d3b1a1513de66247974634911345b98, type: 3}
-      propertyPath: m_TagString
-      value: GazeTarget
-      objectReference: {fileID: 0}
-    - target: {fileID: 128066, guid: 1d3b1a1513de66247974634911345b98, type: 3}
-      propertyPath: m_TagString
-      value: GazeTarget
       objectReference: {fileID: 0}
     - target: {fileID: 409584, guid: 1d3b1a1513de66247974634911345b98, type: 3}
       propertyPath: m_RootOrder
