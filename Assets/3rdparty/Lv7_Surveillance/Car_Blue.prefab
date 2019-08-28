@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4001677332153714715}
   - component: {fileID: 4030707823710359657}
   - component: {fileID: 4020461498251455425}
+  - component: {fileID: 6017088409578333602}
   m_Layer: 0
   m_Name: Wheel RR
   m_TagString: Untagged
@@ -80,6 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6017088409578333602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007155408731939215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53e43649556e464682f2a43311a591a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: {x: 0, y: 0, z: -7200}
 --- !u!1 &4007181135866899299
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +427,7 @@ GameObject:
   - component: {fileID: 4001772834773545463}
   - component: {fileID: 4030176375010713559}
   - component: {fileID: 4021146472698788881}
+  - component: {fileID: 6946865716182090791}
   m_Layer: 0
   m_Name: Wheel FR
   m_TagString: Untagged
@@ -482,6 +497,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6946865716182090791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4007555519860356031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53e43649556e464682f2a43311a591a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: {x: 0, y: 0, z: -7200}
 --- !u!1 &4007847737617282531
 GameObject:
   m_ObjectHideFlags: 0

@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 4475526280394971996}
   - component: {fileID: 4502320135189394812}
   - component: {fileID: 4492515627191539386}
+  - component: {fileID: 9187533343230900588}
   m_Layer: 0
   m_Name: Wheel FR
   m_TagString: Untagged
@@ -238,7 +239,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4470058764368386324}
-  m_LocalRotation: {x: 0.00000014189489, y: -0.7071067, z: 0.00000014189486, w: 0.7071068}
+  m_LocalRotation: {x: -0.6495082, y: 0.2795331, z: 0.6495086, w: -0.27953345}
   m_LocalPosition: {x: 1.3878268, y: -0.0044487715, z: 2.1847398}
   m_LocalScale: {x: 3.6041667, y: 3.6041677, z: 3.6041667}
   m_Children: []
@@ -293,6 +294,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &9187533343230900588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4470058764368386324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53e43649556e464682f2a43311a591a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: {x: 0, y: 0, z: -7200}
 --- !u!1 &4470098100567070932
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,6 +352,7 @@ GameObject:
   - component: {fileID: 4475931605309022896}
   - component: {fileID: 4502076978048203458}
   - component: {fileID: 4494284762458587498}
+  - component: {fileID: 5664667586128927288}
   m_Layer: 0
   m_Name: Wheel RR
   m_TagString: Untagged
@@ -352,7 +367,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4470142439417613092}
-  m_LocalRotation: {x: 0.00000014189489, y: -0.7071067, z: 0.00000014189486, w: 0.7071068}
+  m_LocalRotation: {x: -0.34008968, y: -0.61995083, z: 0.34008986, w: 0.6199507}
   m_LocalPosition: {x: 1.3878268, y: -0.0044487715, z: -2.1847398}
   m_LocalScale: {x: 3.6041667, y: 3.6041677, z: 3.6041667}
   m_Children: []
@@ -407,6 +422,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5664667586128927288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4470142439417613092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53e43649556e464682f2a43311a591a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: {x: 0, y: 0, z: -7200}
 --- !u!1 &4470168166531334600
 GameObject:
   m_ObjectHideFlags: 0
@@ -593,6 +621,7 @@ GameObject:
   - component: {fileID: 4475937616760955716}
   - component: {fileID: 4501745838182245660}
   - component: {fileID: 4494262945420811466}
+  - component: {fileID: 8813246923841705240}
   m_Layer: 0
   m_Name: Wheel FL
   m_TagString: Untagged
@@ -607,7 +636,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4470519486727776292}
-  m_LocalRotation: {x: 0.00000014189489, y: 0.7071067, z: -0.00000014189486, w: 0.7071068}
+  m_LocalRotation: {x: -0.20998481, y: -0.675208, z: -0.20998505, w: -0.6752088}
   m_LocalPosition: {x: -1.3878269, y: -0.0044487715, z: 2.1847398}
   m_LocalScale: {x: 3.6041667, y: 3.6041677, z: 3.6041667}
   m_Children: []
@@ -662,6 +691,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &8813246923841705240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4470519486727776292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53e43649556e464682f2a43311a591a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  angularSpeed: {x: 0, y: 0, z: 7200}
 --- !u!1 &4470612258491228200
 GameObject:
   m_ObjectHideFlags: 0
